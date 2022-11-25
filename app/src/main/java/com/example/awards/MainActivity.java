@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void initData(){
         lstImages.add(R.drawable.ic_launcher_foreground);
+        lstImages.add(R.drawable.ic_launcher_foreground);
+
 
     }
 
