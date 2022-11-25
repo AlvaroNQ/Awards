@@ -36,18 +36,23 @@ public class MyAdapter extends PagerAdapter {
     }
 
     @Override
-    public void destroyItem(ViewGroup container, int position, Object object) {
+    public void destroyItem(ViewGroup container, int position, @NonNull Object object) {
         container.removeView((View) object);
     }
 
+    @NonNull
     @Override
-    public Object instantiateItem(ViewGroup container, int position){
+    public Object instantiateItem(@NonNull ViewGroup container, int position){
         View view = layoutInflater.inflate(R.layout.card_item, container, false);
 
 //        CardView cardView = (CardView) view.findViewById(R.id.cardView);
 
-        ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
+        ImageView imageView = (ImageView) view.findViewById(R.id.imageView1);
         imageView.setImageResource(lstImages.get(position));
+
+        imageView = (ImageView) view.findViewById(R.id.imageView2);
+        imageView.setImageResource(lstImages.get(position));
+
 
 
         container.addView(view);
