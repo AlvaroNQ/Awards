@@ -1,6 +1,7 @@
 package com.example.awards;
 
 import android.os.Bundle;
+import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +9,7 @@ import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Handler;
 
 
 public class MainActivity extends AppCompatActivity {
