@@ -63,7 +63,7 @@ public class MyAdapter extends PagerAdapter {
                 gifImageView.setImageResource(R.drawable.dance);
 
                 textView = (TextView) view.findViewById(R.id.description);
-                textView.setText("Hope you had fun 18th with family, specially with your nephew and my Fiona. You're now officially an adult and can do drugs :D, soft ones at least. But you can't  cuz no C-C");
+                textView.setText("Hope you had a great bday with all people.");
                 textView.setTextSize(25);
                 break;
 
